@@ -1,4 +1,113 @@
-<script>
 <!-- encrypted by feddyplays->
-document.write(unescape('%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%3Ctitle%3EArt%20Spear%20Awards%3C/title%3E%0A%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%0A%3Cstyle%3E%0A%20%20%20%20body%20%7B%0A%20%20%20%20%20%20%20%20margin%3A%200%3B%0A%20%20%20%20%20%20%20%20font-family%3A%20Arial%2C%20sans-serif%3B%0A%20%20%20%20%20%20%20%20background%3A%20%23111%3B%0A%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%20%20%20%20%20%20%20%20overflow%3A%20hidden%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20/*%20Password%20Screen%20*/%0A%20%20%20%20%23password-screen%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20absolute%3B%0A%20%20%20%20%20%20%20%20inset%3A%200%3B%0A%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20background%3A%20%23111%3B%0A%20%20%20%20%20%20%20%20z-index%3A%2010%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20input%20%7B%0A%20%20%20%20%20%20%20%20padding%3A%2010px%3B%0A%20%20%20%20%20%20%20%20font-size%3A%2018px%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%205px%3B%0A%20%20%20%20%20%20%20%20border%3A%20none%3B%0A%20%20%20%20%20%20%20%20margin-top%3A%2010px%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20button%20%7B%0A%20%20%20%20%20%20%20%20padding%3A%2010px%2020px%3B%0A%20%20%20%20%20%20%20%20margin-top%3A%2010px%3B%0A%20%20%20%20%20%20%20%20font-size%3A%2018px%3B%0A%20%20%20%20%20%20%20%20border%3A%20none%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%205px%3B%0A%20%20%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20/*%20Fade%20Animation%20*/%0A%20%20%20%20%23fade%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20absolute%3B%0A%20%20%20%20%20%20%20%20inset%3A%200%3B%0A%20%20%20%20%20%20%20%20background%3A%20%23111%3B%0A%20%20%20%20%20%20%20%20opacity%3A%200%3B%0A%20%20%20%20%20%20%20%20pointer-events%3A%20none%3B%0A%20%20%20%20%20%20%20%20transition%3A%20opacity%201.2s%20ease%3B%0A%20%20%20%20%20%20%20%20z-index%3A%209%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20/*%20Main%20Content%20*/%0A%20%20%20%20%23main-content%20%7B%0A%20%20%20%20%20%20%20%20opacity%3A%200%3B%0A%20%20%20%20%20%20%20%20transition%3A%20opacity%201.2s%20ease%3B%0A%20%20%20%20%20%20%20%20padding%3A%2020px%3B%0A%20%20%20%20%20%20%20%20height%3A%20100vh%3B%0A%20%20%20%20%20%20%20%20overflow-y%3A%20auto%3B%0A%20%20%20%20%7D%0A%3C/style%3E%0A%3C/head%3E%0A%0A%3Cbody%3E%0A%0A%3C%21--%20Password%20Screen%20--%3E%0A%3Cdiv%20id%3D%22password-screen%22%3E%0A%20%20%20%20%3Ch2%3EEnter%20Password%3C/h2%3E%0A%20%20%20%20%3Cinput%20type%3D%22password%22%20id%3D%22password-input%22%20placeholder%3D%22Password%22%3E%0A%20%20%20%20%3Cbutton%20onclick%3D%22checkPassword%28%29%22%3EEnter%3C/button%3E%0A%20%20%20%20%3Cp%20id%3D%22error%22%20style%3D%22color%3Ared%3B%20display%3Anone%3B%22%3EIncorrect%20password%3C/p%3E%0A%3C/div%3E%0A%0A%3C%21--%20Fade%20Animation%20--%3E%0A%3Cdiv%20id%3D%22fade%22%3E%3C/div%3E%0A%0A%3C%21--%20Main%20Content%20--%3E%0A%3Cdiv%20id%3D%22main-content%22%3E%0A%20%20%20%20%3Ch1%3EHi.%20If%20you%20are%20seeing%20this%20webpage%2C%20congrats%20you%20guessed%20the%20password.%20The%20form%20isn%27t%20able%20to%20been%20seen%20yet.%20Are%20you%20happy%20for%20yourself%3F%20Do%20you%20think%20you%20matter%20knowing%20some%20stupid%20password%3F%20You%20looked%20through%20the%20source%20code...%0A%20%20%20%20%20%20Anyways%2C%20You%20also%20win%20%245%20Steam%20Cash%20from%20Mang%20%28dm%20a%20screenshot%20of%20this%20to%20mang%29%3C/h1%3E%0A%0A%3Cscript%3E%0A%20%20%20%20const%20correctPassword%20%3D%20%22ArtSpear%22%3B%20//%20%u2190%20change%20this%0A%0A%20%20%20%20function%20checkPassword%28%29%20%7B%0A%20%20%20%20%20%20%20%20const%20input%20%3D%20document.getElementById%28%22password-input%22%29.value%3B%0A%20%20%20%20%20%20%20%20const%20error%20%3D%20document.getElementById%28%22error%22%29%3B%0A%0A%20%20%20%20%20%20%20%20if%20%28input%20%3D%3D%3D%20correctPassword%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20error.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20startAnimation%28%29%3B%0A%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20error.style.display%20%3D%20%22block%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%0A%20%20%20%20function%20startAnimation%28%29%20%7B%0A%20%20%20%20%20%20%20%20document.getElementById%28%22fade%22%29.style.opacity%20%3D%20%221%22%3B%0A%0A%20%20%20%20%20%20%20%20setTimeout%28%28%29%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20document.getElementById%28%22password-screen%22%29.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20document.getElementById%28%22main-content%22%29.style.opacity%20%3D%20%221%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20document.getElementById%28%22fade%22%29.style.opacity%20%3D%20%220%22%3B%0A%20%20%20%20%20%20%20%20%7D%2C%201200%29%3B%0A%20%20%20%20%7D%0A%3C/script%3E%0A%0A%3C/body%3E%0A%3C/html%3E%0A'));
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Art Spear Awards</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: white;
+        overflow: hidden;
+    }
+
+    /* Password Screen */
+    #password-screen {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #111;
+        z-index: 10;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin-top: 10px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Fade Animation */
+    #fade {
+        position: absolute;
+        inset: 0;
+        background: #111;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 1.2s ease;
+        z-index: 9;
+    }
+
+    /* Main Content */
+    #main-content {
+        opacity: 0;
+        transition: opacity 1.2s ease;
+        padding: 20px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Password Screen -->
+<div id="password-screen">
+    <h2>Enter Password</h2>
+    <input type="password" id="password-input" placeholder="Password">
+    <button onclick="checkPassword()">Enter</button>
+    <p id="error" style="color:red; display:none;">Incorrect password</p>
+</div>
+
+<!-- Fade Animation -->
+<div id="fade"></div>
+
+<!-- Main Content -->
+<div id="main-content">
+    <h1>Hi. If you are seeing this webpage, there was a $5 Steam Cash prize, but @cherlyte found the secret IN LESS THAN TWO SECONDS.</h1>
+
+<script>
+    const correctPassword = "ArtSpear"; // ← change this
+
+    function checkPassword() {
+        const input = document.getElementById("password-input").value;
+        const error = document.getElementById("error");
+
+        if (input === correctPassword) {
+            error.style.display = "none";
+            startAnimation();
+        } else {
+            error.style.display = "block";
+        }
+    }
+
+    function startAnimation() {
+        document.getElementById("fade").style.opacity = "1";
+
+        setTimeout(() => {
+            document.getElementById("password-screen").style.display = "none";
+            document.getElementById("main-content").style.opacity = "1";
+            document.getElementById("fade").style.opacity = "0";
+        }, 1200);
+    }
 </script>
+
+</body>
+</html>
